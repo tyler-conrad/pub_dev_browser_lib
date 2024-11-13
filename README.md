@@ -69,13 +69,13 @@ cd example/pub_dev_browser
 Run the application on your desired device:
 
 ```sh
-dart run -d <device>
+flutter run -d <device>
 ```
 
 Replace `<device>` with the device ID. For example, to run on macOS:
 
 ```sh
-dart run -d macos
+flutter run -d macos
 ```
 
 ## Additional information
