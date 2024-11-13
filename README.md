@@ -20,6 +20,8 @@ render `README.md` files from GitHub repositories.
 - **BLoC Architecture**: Utilizes the BLoC pattern for managing state and
   business logic, ensuring a clear separation of concerns and making the
   codebase more maintainable and testable.
+- **Type-Safe Routing**: Implements routing using the
+  [go_router_builder](https://pub.dev/packages/go_router_builder) package.
 - **Search Screen**: Implements a search screen with text-highlighting for
   full-text search queries. It supports configurable tags and sorting orders,
   and includes a fuzzy matching package name search feature.
@@ -50,6 +52,14 @@ Clone the repository:
 git clone https://github.com/tyler-conrad/pub_dev_browser_lib.git
 ```
 
+Get the dependencies, and build the library:
+
+```sh
+cd pub_dev_browser_lib
+flutter pub get
+flutter pub run build_runner build
+```
+
 Navigate to the example application directory:
 
 ```sh
@@ -71,6 +81,14 @@ dart run -d macos
 ## Additional information
 
 For more detailed information on how to use and extend this library, refer to
-the documentation. If you encounter any issues or have suggestions for
-improvements, feel free to open an issue or submit a pull request on the GitHub
-repository.
+the [documentation](https://tyler-conrad.github.io/doc/pub_dev_browser_lib). If
+you encounter any issues or have suggestions for improvements, feel free to open
+an issue or submit a pull request on the GitHub repository.
+
+## Tested On
+
+- macOS Sequoia 15.1
+- Flutter 3.24.4 • channel stable • https://github.com/flutter/flutter.git
+- Framework • revision 603104015d (3 weeks ago) • 2024-10-24 08:01:25 -0700
+- Engine • revision db49896cf2
+- Tools • Dart 3.5.4 • DevTools 2.37.3
